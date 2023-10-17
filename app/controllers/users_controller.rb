@@ -21,7 +21,7 @@ class UsersController < ApplicationController
         @room = Room.new
         @entry = Entry.new
       end
-      
+    end
   end
 
   def index
@@ -52,4 +52,5 @@ class UsersController < ApplicationController
       redirect_to user_path(current_user)
     end
   end
+  
 end
